@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="560.0" prefWidth="330.0" style="-fx-background-color: #102027;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientFormController">
+   <children>
+      <Label fx:id="lblUserName" layoutX="119.0" layoutY="24.0" prefHeight="24.0" prefWidth="93.0" textFill="#c1ffbf" wrapText="true">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtView" editable="false" layoutX="19.0" layoutY="66.0" prefHeight="429.0" prefWidth="293.0" stylesheets="@../css/style.css" />
+      <ImageView fitHeight="42.0" fitWidth="73.0" layoutX="283.0" layoutY="505.0" onMouseClicked="#imgSendOnMousedClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons/icons8-sent.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtMessageField" layoutX="7.0" layoutY="507.0" onAction="#txtMessageFieldOnAction" prefHeight="38.0" prefWidth="271.0" promptText="Write messages here...." styleClass="msgBox" stylesheets="@../css/style.css">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
